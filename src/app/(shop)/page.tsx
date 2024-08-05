@@ -1,11 +1,13 @@
-import { Title } from '@/components';
-import { titleFont } from '@/config/fonts';
-import React from 'react';
+import { ProductGrid, Title } from '@/components';
+import { initialData } from '@/seed/seed';
+
+const products = initialData.products;
 
 const Home = () => {
   return (
     <main className="">
-      <Title title='Tienda' subtitle='Todos los Productos' />
+      <Title title="Tienda" subtitle="Todos los Productos" />
+      <ProductGrid products={products} />
     </main>
   );
 };

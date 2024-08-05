@@ -1,5 +1,3 @@
-import { titleFont } from '@/config/fonts';
-import React from 'react';
 
 const Login = () => {
   return (
